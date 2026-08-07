@@ -19,3 +19,8 @@ nslookup: DNS records
 traceroute: packet path tracer
 host: ip <> domain mapper
 netstat: info about network connections, routing tables, interface statistics and port status
+
+
+- connecting to vm
+ssh: for file transfer: ssh user@remote_ip "cat /path/to/remote/file.log" > ~/local_file.log
+sftp: easy file transfer (cd, ls for vm; lcd, lls for local machine. 'get filename' to transfer file from vm to local)
