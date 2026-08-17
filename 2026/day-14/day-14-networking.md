@@ -1,0 +1,7 @@
+- **Identity:** `hostname -I` (or `ip addr show`) — note your IP.
+- **Reachability:** `ping <target>` — mention latency and packet loss.
+- **Path:** `traceroute <target>` (or `tracepath`) — note any long hops/timeouts.
+- **Ports:** `ss -tulpn` (or `netstat -tulpn`) — list one listening service and its port.
+- **Name resolution:** `dig <domain>` or `nslookup <domain>` — record the resolved IP.
+- **HTTP check:** `curl -I <http/https-url>` — note the HTTP status code.
+- **Connections snapshot:** `netstat -an | head` — count ESTABLISHED vs LISTEN (rough).
